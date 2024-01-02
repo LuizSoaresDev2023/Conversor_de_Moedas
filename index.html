@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords"
+        content="conversor, moedas, cotação, real, dólar, iene, euro, peso, html, css, js, projeto, desenvolvedor, developer">
+    <meta name="author" content="Luiz Soares">
+    <meta name="description"
+        content="Site construído como projeto de HTML, CSS, e JS para estudo - conversor de sete (7) moedas diferentes - Cotação: 29/12/2023.">
+    <link rel="shortcut icon" href="img/ico_moeda32.png" type="image/png">
+    <title>Conversor de Moedas</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>
+            Conversor de Moedas
+        </h1>
+    </header>
+    <section id="section1">
+        <div>
+            <label for="inputMoedaOriginal" id="labelMoedaOriginal" name="labelMoedaOriginal">Valor a
+                Converter:</label>
+        </div>
+        <div>
+            <input type="text" id="inputMoedaOriginal" name="inputMoedaOriginal" placeholder="Digite o valor" value="0">
+        </div>
+        <div>
+            <p id="pReal">Real</p>
+        </div>
+    </section>
+    <section id="section2">
+        <div class="meio">
+            <div>
+                <label for="selectMoedaOriginal" id="labelSelectMoedaOriginal"
+                    name="labelSelectMoedaOriginal">De:</label>
+                <select id="selectMoedaOriginal" name="selectMoedaOriginal">
+                    <option value="Real" selected>Real</option>
+                    <option value="Dolar">Dólar</option>
+                    <option value="Euro">Euro</option>
+                    <option value="Libra">Libra</option>
+                    <option value="Iene">Iene</option>
+                    <option value="Won">Won</option>
+                    <option value="Peso">Peso</option>
+                </select>
+                <img id="brasil" src="img/brasil.png">
+                <img id="seta" src="img/seta.png">
+            </div>
+            <div>
+                <label for="selectMoedaAlvo" id="labelSelectMoedaAlvo" name="labelSelectMoedaAlvo">Para:</label>
+                <select id="selectMoedaAlvo" name="selectMoedaAlvo">
+                    <option value="Real">Real</option>
+                    <option value="Dolar" selected>Dólar</option>
+                    <option value="Euro">Euro</option>
+                    <option value="Libra">Libra</option>
+                    <option value="Iene">Iene</option>
+                    <option value="Won">Won</option>
+                    <option value="Peso">Peso</option>
+                </select>
+                <img id="eua" src="img/eua.png">
+            </div>
+        </div>
+        <div class="meio">
+            <div>
+
+            </div>
+            <div>
+
+            </div>
+        </div>
+    </section>
+    <section id="section3">
+        <div>
+            <label for="inputMoedaAlvo" id="labelMoedaAlvo" name="labelMoedaAlvo">Valor Convertido:</label>
+        </div>
+        <div>
+            <input type="text" id="inputMoedaAlvo" name="inputMoedaAlvo" placeholder="Valor convertido" readonly>
+        </div>
+        <div>
+            <p id="pDolar">Dólar</p>
+    </section>
+
+
+
+
+    <footer>
+        <p>Cotação em 29/12/2023</p>
+    </footer>
+</body>
+
+</html>
